@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Enquiry - Golden Crust Bakery</title>
+    <meta name="description" content="Place your order enquiry for artisan breads, pastries, custom cakes, or wholesale.">
+</head>
+<body>
+    <!-- ======================================== -->
+    <!-- HEADER & NAVIGATION                      -->
+    <!-- ======================================== -->
+    <header>
+        <div>
+            <h1>🍞 Golden Crust Bakery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Menu</a></li>
+                <li><a href="enquiry.html">Order Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======================================== -->
+    <!-- MAIN CONTENT - ENQUIRY PAGE             -->
+    <!-- ======================================== -->
+    <main>
+        <!-- Page Hero -->
+        <section>
+            <h2>Order Enquiry</h2>
+            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section>
+            <form action="#" method="POST">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div>
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="e.g., John Doe" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="e.g., john@example.com" required>
+                    </div>
+                    
+                    <div>
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g., 082 123 4567" required>
+                    </div>
+                </fieldset>
+
+                <!-- Enquiry Type -->
+                <fieldset>
+                    <legend>What are you enquiring about?</legend>
+                    
+                    <div>
+                        <label>
+                            <input type="radio" name="enquiry-type" value="standard-order" checked>
+                            Standard Order (Menu Items)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="enquiry-type" value="custom-cake">
+                            Custom Celebration Cake
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="enquiry-type" value="wholesale">
+                            Wholesale Enquiry
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Order Details -->
+                <fieldset>
+                    <legend>Order Details</legend>
+                    
+                    <div>
+                        <label for="items">Items you'd like to order</label>
+                        <textarea id="items" name="items" rows="4" placeholder="List the items you want to order with quantities, e.g., 2 x Sourdough, 6 x Croissants"></textarea>
+                    </div>
+                    
+                    <div>
+                        <label for="pickup-date">Preferred Pickup/Delivery Date</label>
+                        <input type="date" id="pickup-date" name="pickup-date">
+                    </div>
+                    
+                    <div>
+                        <label for="delivery">Delivery or Pickup?</label>
+                        <select id="delivery" name="delivery">
+                            <option value="pickup">Pickup from Woodstock</option>
+                            <option value="pickup-vredehoek">Pickup from Vredehoek</option>
+                            <option value="delivery">Delivery (additional fee applies)</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Custom Cake Details (conditional) -->
+                <fieldset>
+                    <legend>Custom Cake Details (if applicable)</legend>
+                    
+                    <div>
+                        <label for="cake-type">Cake Type</label>
+                        <select id="cake-type" name="cake-type">
+                            <option value="">-- Please Select --</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="vanilla">Vanilla</option>
+                            <option value="red-velvet">Red Velvet</option>
+                            <option value="carrot">Carrot</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="cake-size">Number of Servings</label>
+                        <input type="number" id="cake-size" name="cake-size" placeholder="e.g., 12">
+                    </div>
+                    
+                    <div>
+                        <label for="cake-design">Design/Theme Description</label>
+                        <textarea id="cake-design" name="cake-design" rows="3" placeholder="Describe your design ideas, colours, themes, or special requirements"></textarea>
+                    </div>
+                    
+                    <div>
+                        <label for="cake-image">Upload Reference Image (Optional)</label>
+                        <input type="file" id="cake-image" name="cake-image" accept="image/*">
+                    </div>
+                </fieldset>
+
+                <!-- Additional Information -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <div>
+                        <label for="special-instructions">Special Instructions or Dietary Requirements</label>
+                        <textarea id="special-instructions" name="special-instructions" rows="3" placeholder="e.g., Gluten-free, dairy-free, nut allergies"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit">Submit Enquiry</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+
+            <p><strong>Note:</strong> We will respond to your enquiry within 24 hours.</p>
+            <p>For urgent orders, please call us at <strong><a href="tel:+27123456789">+27 12 345 6789</a></strong>.</p>
+        </section>
+
+        <!-- Quick Order Guide -->
+        <section>
+            <h3>Ordering Guide</h3>
+            <ul>
+                <li><strong>Standard Orders:</strong> Allow 24-48 hours for fulfilment.</li>
+                <li><strong>Custom Cakes:</strong> Please allow 5-7 days notice for custom cakes.</li>
+                <li><strong>Wholesale Orders:</strong> Minimum order of 10 items. Weekly delivery available.</li>
+                <li><strong>Payment:</strong> Cash, EFT, or card accepted on pickup.</li>
+                <li><strong>Delivery:</strong> Available within Cape Town area. Fees apply.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ======================================== -->
+    <!-- FOOTER                                   -->
+    <!-- ======================================== -->
+    <footer>
+        <div>
+            <h4>Golden Crust Bakery</h4>
+            <p>Handcrafted with Love, Baked to Perfection</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Menu</a></li>
+                <li><a href="enquiry.html">Order Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>📞 <a href="tel:+27123456789">+27 12 345 6789</a></p>
+            <p>📧 <a href="mailto:info@goldencrustbakery.co.za">info@goldencrustbakery.co.za</a></p>
+            <p>📍 Woodstock &amp; Vredehoek, Cape Town</p>
+        </div>
+        <div>
+            <h4>Follow Us</h4>
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a>
+        </div>
+        <div>
+            <p>&copy; 2026 Golden Crust Bakery. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
